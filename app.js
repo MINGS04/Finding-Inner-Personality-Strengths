@@ -578,7 +578,7 @@ function renderResult() {
 
       <div class="primary-result-card">
         <div class="center">
-          <div style="font-size:18px; margin-bottom:8px;">나와 가장 가까운 유형은</div>
+          <div style="font-size:18px; margin-bottom:8px;">나와 가장 가까운 유형은 <strong>[${t1.label}]</strong></div>
           <h2 class="result-title ${t1.colorClass}">${t1.fullTitle}</h2>
           <div class="trait-tagline">“${t1.tagline}”</div>
         </div>
