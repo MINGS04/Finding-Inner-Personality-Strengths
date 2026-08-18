@@ -9,7 +9,7 @@
  * appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_uIOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec"
  */
 window.TEST_CONFIG = Object.freeze({
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_ulOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_uIOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec",
 
   // 중앙 저장 사용 여부. URL이 비어 있으면 자동으로 로컬 백업만 수행합니다.
   centralStorageEnabled: true,
