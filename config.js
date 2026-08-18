@@ -6,7 +6,7 @@
  * 2. 이 파일을 수정한 뒤 GitHub에 업로드하면 됩니다.
  *
  * 예:
- * appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_ulOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec"
+ * appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_uIOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec"
  */
 window.TEST_CONFIG = Object.freeze({
   appsScriptUrl: "https://script.google.com/macros/s/AKfycbyoEwBhQtAXrOE_ulOfPs_gPvsxKPMZj2iK7LguYM3XgmXtEAba2iGikROddcKHPACC/exec",
