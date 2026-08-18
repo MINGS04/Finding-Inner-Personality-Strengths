@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강점 검사 결과 관리</title>
+  <link rel="stylesheet" href="style.css?v=15" />
+  <style>
+    .admin-shell{max-width:1200px;margin:0 auto;padding:24px 16px 50px}
+    .admin-head{text-align:center;margin-bottom:20px}
+    .admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+    .admin-table-wrap{overflow:auto;background:#fff;border-radius:22px;box-shadow:var(--shadow);padding:10px}
+    .admin-table{border-collapse:collapse;width:100%;font-size:13px;min-width:1100px}
+    .admin-table th,.admin-table td{padding:10px 8px;border-bottom:1px solid #edf0f2;vertical-align:top;text-align:left}
+    .admin-table th{position:sticky;top:0;background:#f7fafb;z-index:1}
+    .empty{padding:40px;text-align:center;color:var(--muted)}
+    .select-col{width:48px;min-width:48px;text-align:center!important}
+    .select-col input{width:18px;height:18px;cursor:pointer;accent-color:#5e95a4}
+    .selected-row td{background:#eef7f8}
+    .btn-danger{background:#d95c5c;color:#fff;padding:14px 22px;box-shadow:0 7px 16px rgba(217,92,92,.18)}
+    .btn-danger:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;transform:none}
+  </style>
+</head>
+<body>
+  <div class="admin-shell">
+    <div class="admin-head">
+      <img src="assets/logo.png" alt="WISDOM AG305" class="site-logo" />
+      <div style="max-width:1200px;margin:0 auto 16px;padding:12px 16px;border-radius:14px;background:#fff8e8;color:#6c5719;line-height:1.65;"><strong>안내:</strong> 이 화면은 현재 기기의 브라우저 로컬 백업을 확인하는 관리자 화면입니다. 중앙 연구자료 원본은 연결한 Google Spreadsheet의 <code>responses_v12</code> 시트에 자동 누적됩니다. 검사 시간 정보도 참가자 화면에는 보이지 않고 저장 자료에서만 확인됩니다.</div>
+<h1>강점 검사 결과 관리</h1>
+      <p class="note">참여자에게는 보이지 않는 별도 관리 화면입니다. 현재 브라우저에 저장된 응답을 확인합니다.</p>
+    </div>
+    <div class="admin-actions">
+      <button class="btn-primary" id="refreshBtn">새로고침</button>
+      <button class="btn-secondary" id="csvBtn">전체 CSV 저장</button>
+      <button class="btn-danger" id="deleteSelectedBtn" disabled>선택 자료 삭제</button>
+      <button class="btn-ghost" id="clearBtn">이 브라우저 기록 비우기</button>
+    </div>
+    <div id="summary" class="note"></div>
+    <div id="tableRoot" class="admin-table-wrap"></div>
+  </div>
+  <script src="config.js?v=15"></script>
+  <script src="admin.js?v=15"></script>
+</body>
+</html>
