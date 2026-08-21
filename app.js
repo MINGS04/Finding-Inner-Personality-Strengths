@@ -594,16 +594,16 @@ function renderResult() {
           ${renderSecondaryCard("2순위", t2)}
           ${renderSecondaryCard("3순위", t3)}
         </div>
+      </div>
 
-        <div class="section-title">${t1.name}'s 환상의 짝꿍은~</div>
-        <div class="partner-grid">
-          ${partners.map(p => `
-            <div class="partner-card">
-              <strong>${p.name} ${p.emoji}</strong>
-              ${getPairText(top1.key, p.key)}
-            </div>
-          `).join("")}
-        </div>
+      <h3 class="secondary-heading">${t1.name}'s 환상의 짝꿍은~</h3>
+      <div class="partner-grid">
+        ${partners.map(p => `
+          <div class="partner-card">
+            <strong>${p.name} ${p.emoji}</strong>
+            ${getPairText(top1.key, p.key)}
+          </div>
+        `).join("")}
       </div>
 
       <div class="other-strengths">
