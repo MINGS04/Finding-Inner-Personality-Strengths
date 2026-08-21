@@ -589,7 +589,13 @@ function renderResult() {
         <div class="section-title">나의 강점</div>
         <div class="strengths">${t1.strengths.join(", ")}</div>
 
-        <div class="section-title">환상의 동물 짝꿍은 ~</div>
+        <h3 class="secondary-heading">나와 함께 가까이 나타난 유형</h3>
+        <div class="secondary-ranks">
+          ${renderSecondaryCard("2순위", t2)}
+          ${renderSecondaryCard("3순위", t3)}
+        </div>
+
+        <div class="section-title">${t1.name}'s 환상의 짝꿍은~</div>
         <div class="partner-grid">
           ${partners.map(p => `
             <div class="partner-card">
@@ -598,12 +604,6 @@ function renderResult() {
             </div>
           `).join("")}
         </div>
-      </div>
-
-      <h3 class="secondary-heading">나와 함께 가까이 나타난 유형</h3>
-      <div class="secondary-ranks">
-        ${renderSecondaryCard("2순위", t2)}
-        ${renderSecondaryCard("3순위", t3)}
       </div>
 
       <div class="other-strengths">
